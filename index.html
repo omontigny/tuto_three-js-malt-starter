@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .title-h1 {
+        align-items: center;
+        display: flex;
+        font-size: 42px;
+        height: 50%;
+        justify-content: center;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        font-family: Roboto;
+        width: 100%;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <h1 class="title-h1">My Title</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
